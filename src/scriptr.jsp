@@ -1,3 +1,4 @@
+set define off
 create or replace and compile java source named scriptr$$ as
 import java.util.*;
 import java.sql.*;
