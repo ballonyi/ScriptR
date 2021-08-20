@@ -1,4 +1,4 @@
-﻿create or replace and compile java source named tablerow$$ as
+create or replace and compile java source named tablerow$$ as
 import java.util.*;
 import java.sql.*;
 import java.io.*;

@@ -1,4 +1,4 @@
-﻿create or replace and compile java source named scriptr$$ as
+create or replace and compile java source named scriptr$$ as
 import java.util.*;
 import java.sql.*;
 import java.io.*;

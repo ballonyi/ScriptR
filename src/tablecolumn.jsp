@@ -1,4 +1,5 @@
-﻿create or replace and compile java source named tablecolumn$$ as
+set define off
+create or replace and compile java source named tablecolumn$$ as
 import java.util.Date;
 import java.util.*;
 

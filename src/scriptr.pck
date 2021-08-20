@@ -1,4 +1,4 @@
-﻿create or replace package scriptr$ AUTHID CURRENT_USER is
+create or replace package scriptr$ AUTHID CURRENT_USER is
 
     /*
                                                 S c r i p t - R
