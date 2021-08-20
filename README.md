@@ -42,7 +42,7 @@ end;
 ``` 
 (testdata.sql generated this way)      
     
-Create script including exclude some column
+Create script but exclude some column
 ```sql
 declare
     l_clob clob;
@@ -52,7 +52,7 @@ end;
 /    
 ```     
     
-Create script using exclude and where clause
+Create script using exclude and "where" clause
 ```sql
 declare
     l_clob clob;
