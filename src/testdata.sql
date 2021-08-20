@@ -1,4 +1,13 @@
-﻿
+create table my_table(
+    id       integer,
+    code     varchar2(20),
+    name     varchar2(100),
+    created  date,
+    comments clob,
+    picture  blob,
+    price    number);
+
+
 	insert into MY_TABLE(id,code,name,created,comments,picture,price)
 	values(1,q'~A~',q'~no lob values~',to_date('2021.05.22 00:00:00','yyyy.mm.dd hh24:mi:ss'),null,null,0.1);
 
