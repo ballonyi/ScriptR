@@ -63,7 +63,8 @@ end;
 ```   
     
 ## Details    
-If you check generated script you can see that in simplest way the insert look like:
+
+In the script in simplest case you can see simple insert statements like this:
 ![](md/example1.jpg)
 
 Text values scripted with literal quoting, the default quoting character is tilde char (overridde it using p_quotingChar parameter).    
