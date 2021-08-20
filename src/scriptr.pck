@@ -1,4 +1,3 @@
-set define off
 create or replace package scriptr$ AUTHID CURRENT_USER is
 
     /*
