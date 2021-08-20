@@ -62,3 +62,6 @@ end;
 /    
 ```   
     
+## Details    
+If you check generated script you can see that in simplest way the insert look like:
+![](md/example1.jpg)    
