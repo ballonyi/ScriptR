@@ -72,7 +72,7 @@ Text values scripted with literal quoting, the default quoting character is tild
 If the CLOB shorter than 4000 char then no difference:
 ![](md/example2.jpg)
     
-CLOBs longer than 4000 char scripted as concatenated chunks.
+CLOBs longer than 4000 char then it will scripted using anonymous block. CLOB is scripted as concatenated chunks.
 ![](md/example3.jpg)    
 
 BLOBs scripted as concatenated RAWs: 
