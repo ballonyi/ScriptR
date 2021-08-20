@@ -64,4 +64,9 @@ end;
     
 ## Details    
 If you check generated script you can see that in simplest way the insert look like:
-![](md/example1.jpg)    
+![](md/example1.jpg)
+    
+If the CLOB shorter than 4000 char then no difference:
+![](md/example2.jpg)
+    
+    
