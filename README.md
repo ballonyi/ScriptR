@@ -69,8 +69,12 @@ If you check generated script you can see that in simplest way the insert look l
 If the CLOB shorter than 4000 char then no difference:
 ![](md/example2.jpg)
     
-If the CLOB longer than 4000 char then clob is splitted: 
+CLOBs longer than 4000 char scripted as concatenated chunks.
 ![](md/example3.jpg)    
 
-BLOB scripted in splitted RAW converted to hex, which concatenated using dbms_lob.append: 
+BLOBs scripted as concatenated RAWs: 
 ![](md/example4.jpg)      
+
+### Note
+If scripted table contains many rows and/or huge LOBs, then large files can be generated. In this case consider to use Oracle Datapump instead. But if table contains long LOBs sparsely then ScriptR is a comfortable way.
+    
