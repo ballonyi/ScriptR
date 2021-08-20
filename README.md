@@ -7,6 +7,10 @@ The project can be build using Maven. The result will be appear in target direct
 sqlplus @install.sql
 ```
 ## Usage
+    
+### Testdata
+    
+Create a table:    
 ```sql
 create table my_table(
     id       integer,
@@ -19,4 +23,42 @@ create table my_table(
   
   
 ```  
-  
+
+Insert some rows:
+```sh
+sqlplus @install.sql
+```    
+
+### Examples
+    
+Create script including all rows and columns
+```sql
+declare
+    l_clob clob;
+begin
+    l_clob := scriptr$.getInsertScript(p_tableName => 'MY_TABLE');               
+end;
+/    
+``` 
+(testdata.sql generated this way)      
+    
+Create script including exclude some column
+```sql
+declare
+    l_clob clob;
+begin
+    l_clob := scriptr$.getInsertScript(p_tableName => 'MY_TABLE', p_excludedCols => 'ID,PICTURE');               
+end;
+/    
+```     
+    
+Create script using exclude and where clause
+```sql
+declare
+    l_clob clob;
+begin
+    l_clob := scriptr$.getInsertScript(p_tableName => 'MY_TABLE', p_excludedCols => 'ID,PICTURE', p_where => 'ID=1');               
+end;
+/    
+```   
+    
