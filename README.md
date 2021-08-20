@@ -65,6 +65,7 @@ end;
 ## Details    
 If you check generated script you can see that in simplest way the insert look like:
 ![](md/example1.jpg)
+Text values scripted with literal quoting, the default quoting character is tilde char (can be overridden using p_quotingChar parameter).
     
 If the CLOB shorter than 4000 char then no difference:
 ![](md/example2.jpg)
