@@ -71,3 +71,6 @@ If the CLOB shorter than 4000 char then no difference:
     
 If the CLOB longer than 4000 char then clob is splitted: 
 ![](md/example3.jpg)    
+
+BLOB scripted in splitted RAW converted to hex, which concatenated using dbms_lob.append: 
+![](md/example4.jpg)      
