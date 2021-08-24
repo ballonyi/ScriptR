@@ -1,8 +1,7 @@
 # ScriptR
-PL/SQL utilitty to generate script containing list of insert statements to reproduce the contents of the specified table.
+PL/SQL utility to generate script containing list of insert statements to reproduce the contents of the specified table.
 
 # Installation
-The project can be build using Maven. The result will be appear in target directory as the name of **RibbonMenu-<version>.jar**.
 ```sh
 sqlplus @install.sql
 ```
@@ -26,7 +25,7 @@ create table my_table(
 
 Insert some rows:
 ```sh
-sqlplus @install.sql
+sqlplus @testdata.sql
 ```    
 
 ### Examples
